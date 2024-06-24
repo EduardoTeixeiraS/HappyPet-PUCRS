@@ -7,6 +7,10 @@ body {
     align-items: center;
 }
 
+.logolink {
+    text-decoration: none;
+}
+
 .logoloja {
     height: 50px;
     margin-left: 18.5px;
