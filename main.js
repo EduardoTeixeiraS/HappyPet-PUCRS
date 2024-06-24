@@ -1,9 +1,9 @@
 // Validação da senha
-/*let senha = document.getElementById('senha');
+let senha = document.getElementById('senha');
 let senhaC = document.getElementById('senhaC');
 let senhaHelp = document.getElementById('senhaHelp')
-*/
-/*function validarSenha(){
+
+function validarSenha(){
     if (senha.value != senhaC.value) {
         senhaC.setCustomValidity("Senhas diferentes!");
         senhaC.reportValidity();
@@ -12,18 +12,7 @@ let senhaHelp = document.getElementById('senhaHelp')
         senhaC.setCustomValidity("");
         return true;
     }
-}*/
-
-/*
-function tamanhoSenha(){
-    if (senha.length < 6){
-        senhaHelp.classList.add('error-text')
-        return false;
-    } else {
-        senhaHelp.classList.remove('error-text')
-        return true;
-    }
-}*/
+}
 
 function irParaParte2() {
     // Mostra a segunda parte do formulário e oculta a primeira parte
@@ -61,4 +50,4 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     return true;
 });
 
-// senhaC.addEventListener('input', validarSenha)
+senhaC.addEventListener('input', validarSenha)
