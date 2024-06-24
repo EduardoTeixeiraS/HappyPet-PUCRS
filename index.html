@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyPet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="nav-link">
+                    <img src="/images/logo/Group.png" alt="logo" class="logoloja">
+                    <h2 class="navbar-brand m-0 section-title">
+                        HappyPet
+                    </h2>
+                </a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="index.html#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="index.html#servicos" class="nav-link">
+                            <i class="bi bi-scissors"></i>
+                            Serviços
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="index.html#produtos" class="nav-link">
+                            <i class="bi bi-cart"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="index.html#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="login.html" class="nav-link">
+                            <i class="bi bi-door-open"></i>
+                            Entrar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section>
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/slidepet1.png" alt="Cachorro sentado">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slidepet2.png" alt="Grupo de filhotes">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slidepet3.png" alt="Cachorro tomando banho">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5" id="sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/pet-shop-interior.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a HappyPet</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate numquam ratione magni deleniti recusandae libero molestias nisi iure delectus dignissimos. Consectetur quis suscipit omnis blanditiis voluptatum exercitationem eos numquam id.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium in dolore, neque corrupti ex rerum ipsa ipsum dolores voluptatem nobis sit sequi earum deserunt asperiores nostrum dolorum pariatur aliquam maiores?
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="servicos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Nossos <span class="text-colored">serviços</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 card">
+                        <img src="./images/servicos/loja.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <div class="card-body">
+                            <h3 class="section-title text-colored fs-4">
+                                <i class="bi bi-cart4 me-1"></i>
+                                Loja
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo perspiciatis at culpa, eius omnis, obcaecati soluta autem voluptatem, dolores repudiandae iure quod hic accusantium? Labore maxime quia quod praesentium!
+                            </p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <img src="./images/servicos/pacote-banho-e-tosa.png" alt="" class="d-block w-100 rounded mb-2">
+                        <div class="card-body">
+                            <h3 class="section-title text-colored fs-4">
+                                <i class="bi bi-scissors"></i>
+                                Banho & tosa
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo perspiciatis at culpa, eius omnis, obcaecati soluta autem voluptatem, dolores repudiandae iure quod hic accusantium? Labore maxime quia quod praesentium!
+                            </p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <img src="./images/servicos/hotel.jpg" alt="" class="d-block w-100 rounded mb-2 card-img-top">
+                        <div class="card-body">
+                            <h3 class="section-title text-colored fs-4">
+                                <i class="bi bi-house-heart-fill"></i>
+                                Hotelaria
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo perspiciatis at culpa, eius omnis, obcaecati soluta autem voluptatem, dolores repudiandae iure quod hic accusantium? Labore maxime quia quod praesentium!
+                            </p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nossa <span class="text-colored">loja</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cachorro" class="fw-bold text-start nav-link text-colored active">Cachorro</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#gato" class="fw-bold text-start nav-link text-colored">Gato</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#outros" class="fw-bold text-start nav-link text-colored">Outros</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="cachorro">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/cachorros/racao1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Ração Golden Special para Cães Adultos Sabor Frango e Carne</h5>
+                                                <strong class="card-text">R$ 149,99</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/cachorros/tapete1.jpg" alt="Tapete higienico">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Tapete Higiênico Chalesco Premium para Cães</h5>
+                                                <strong class="card-text">R$ 144,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/cachorros/coleira1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Coleira Zee.Dog Nox para Cães</h5>
+                                                <strong class="card-text">R$ 89,00</strong>
+                                            </div>
+                                            <footer class="card-footer mt-3">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/cachorros/shampoo1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Shampoo Antipulgas Previn</h5>
+                                                <strong class="card-text">R$ 36,00</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/cachorros/cama1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Cama Angélica Griff Dog para Cães Cinza</h5>
+                                                <strong class="card-text">R$ 199,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="gato">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/gatos/racao1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Ração Golden para Gatos Adultos Castrados Sabor Frango</h5>
+                                                <strong class="card-text">R$ 44,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/gatos/areia1.jpg" alt="Tapete higienico">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Areia Higiênica Cansei de Ser Gato Biodegradável Grãos Médios</h5>
+                                                <strong class="card-text">R$ 69,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/gatos/caixatransp1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Caixa de Transporte Atlas Trendy Ferplast para Cães e Gatos Cinza</h5>
+                                                <strong class="card-text">R$ 199,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/gatos/roupa1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Moletom Cansei de Ser Gato Grafite e Amarelo para Gatos</h5>
+                                                <strong class="card-text">R$ 65,00</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/gatos/casa1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Casa Hello Pet Barcelona Branco e Vermelho para Cães e Gatos</h5>
+                                                <strong class="card-text">R$ 299,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/gatos/arranhador1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Arranhador Hello Pet de Canto Pelúcia Cinza para Gatos</h5>
+                                                <strong class="card-text">R$ 129,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="outros">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/outros/gaiola1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Gaiola Monaco Castelo para Calopsita Vermelha</h5>
+                                                <strong class="card-text">R$ 305,00</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/outros/feno1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Alimento Jaal Feno Prensado para Roedores 200 g</h5>
+                                                <strong class="card-text">R$ 13,90</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                        <div class="card text-center">
+                                            <header class="card-header">
+                                                <img class="w-100" src="./images/loja/outros/peixe1.jpg" alt="Ração">
+                                            </header>
+                                            <div class="card-body">
+                                                <h5 class="fs-6">Ração Nutricon Marinho Soft Nano 20g</h5>
+                                                <strong class="card-text">R$ 12,00</strong>
+                                            </div>
+                                            <footer class="card-footer">
+                                                <button type="button" class="btn btn-outline-success">
+                                                    Comprar
+                                                </button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Fale <span class="text-colored">conosco</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel" id="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <textarea class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container d-md-flex">
+            <div class="col-10">
+                <small>
+                    2024 © HappyPet
+                </small>
+            </div>
+            <div>
+                <small>
+                    Desenvolvido por Eduardo Teixeira
+                </small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
